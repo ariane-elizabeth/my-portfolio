@@ -1,2 +1,3 @@
-# my-portfolio
-This is my professional serverless portfolio
+# Ariane's Serverless Portolio
+
+Using AWS and ReactJS.
