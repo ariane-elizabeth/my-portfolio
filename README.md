@@ -6,3 +6,7 @@ Using AWS and ReactJS.
 
 Git and github
 SSH
+html
+css
+Font Awesome
+Google Fonts
