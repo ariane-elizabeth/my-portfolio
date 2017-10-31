@@ -27,6 +27,7 @@
     <script src="https://unpkg.com/babel-standalone"></script>
     <script type="text/javascript" src="https://unpkg.com/react@15.3.1/dist/react.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/react-dom@15.3.1/dist/react-dom.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/chai@3.5.0/chai.js"></script>
 
     <script type="text/babel" data-presents="react">
 
@@ -81,6 +82,23 @@
     }
 
       ReactDOM.render(<NameInput />, document.getElementById('content'));
+
+    </script>
+
+    <script type="text/babel" data-presets="react">
+
+    const assert = chai.assert;
+
+    assert.equal(5, 3+2, "Maths works!");
+    assert.notEqual(3+2, 6, "math still works!");
+    assert.closeTo(Math.PI, 3, .2, "Pi is close to 3.");
+
+    assert.isDefined(MessageBox, "Our message box component is defined.");
+
+    let myName = "ariane";
+    const greet = (name) => "Hello, " + name + "!";
+
+    assert.include(greet(myName), myName, "Greeting includes my name.");
 
     </script>
   </body>
